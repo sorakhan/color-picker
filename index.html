@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+    AUTHOR: SORA KHAN
+    DATE:   JULY 2022
+   -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/styles/style.css" />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Color Picker</h1>
+    </header>
+    <div class="container">
+      <section class="blurb">
+        <h3>About</h3>
+        <p>
+          This color picker was made using plain HTML, CSS and JavaScript. The
+          whole purpose is to practice Vanilla JS. The aim is to have the color
+          picker as close as possible to the common color pickers we see today.
+          For example, google "color picker".
+        </p>
+        <p><span class="bolded">Status:</span> Work in progress</p>
+      </section>
+      <section>
+        <div class="boxes">
+          <canvas class="picker" width="400" height="255"></canvas>
+          <div class="color-values">
+            <div class="selected-color"></div>
+            <p class="rgb-values"></p>
+          </div>
+        </div>
+        <div class="color-bar">
+          <input class="slider" type="range" min="0" max="1530" value="0" />
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        Copyright <span class="date"></span> &copy; Color Picker by
+        <a href="https://www.sorakhan.com/">Sora Khan</a>
+      </p>
+    </footer>
+    <script src="lib/scripts/app.js"></script>
+  </body>
+</html>
